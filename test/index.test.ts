@@ -1,1 +1,5 @@
-import test from 'brittle' // https://github.com/holepunchto/brittle
+import test from 'brittle';
+
+test('smoke test', (t) => {
+  t.ok(true);
+});
