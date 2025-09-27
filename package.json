@@ -14,6 +14,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "start": "pear run pear://t93kni74o9j93j6hpwyxdegigk3f68astiadaw54bomnhy19nkuo",
     "dev": "npm run build && pear run -d .",
     "test": "tsx test/*.test.ts",
     "typecheck": "tsc --noEmit",
