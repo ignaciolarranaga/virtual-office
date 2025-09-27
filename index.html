@@ -2,7 +2,7 @@
 <html>
   <head>
     <style>
-      body > h1:nth-of-type(1) {
+      #app-root h1 {
         cursor: pointer;
       }
 
@@ -34,10 +34,10 @@
         margin-left: 12px;
       }
     </style>
-    <script type="module" src="./dist/app.js"></script>
+    <script type="module" src="./dist/main.js"></script>
   </head>
   <body>
     <div id="bar"><pear-ctrl></pear-ctrl></div>
-    <h1>desktop</h1>
+    <div id="app-root"></div>
   </body>
 </html>
