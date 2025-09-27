@@ -13,11 +13,15 @@
   "type": "module",
   "license": "Apache-2.0",
   "scripts": {
-    "dev": "pear run -d .",
-    "test": "brittle test/*.test.js"
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "npm run build && pear run -d .",
+    "test": "tsx test/*.test.ts",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "brittle": "^3.0.0",
-    "pear-interface": "^1.0.0"
+    "pear-interface": "^1.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.4.5"
   }
 }
